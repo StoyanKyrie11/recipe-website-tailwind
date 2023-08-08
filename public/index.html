@@ -1,0 +1,162 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="text-gray-600 font-body">
+    <!-- Content wrapper -->
+    <div class="grid md:grid-cols-3 ">
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/" class="hover:text-gray-700">Food
+                            recipes</a>
+                    </h1>
+
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd"
+                                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1">
+                        <a href="#" class="link border-primary">
+                            <span>Home</span>
+                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                    d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="link border-white">
+                            <span>About</span>
+                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 2z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="link border-white">
+                            <span>Contact</span>
+                            <svg class="w-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                    d="M2.106 6.447A2 2 0 001 8.237V16a2 2 0 002 2h14a2 2 0 002-2V8.236a2 2 0 00-1.106-1.789l-7-3.5a2 2 0 00-1.788 0l-7 3.5zm1.48 4.007a.75.75 0 00-.671 1.342l5.855 2.928a2.75 2.75 0 002.46 0l5.852-2.926a.75.75 0 10-.67-1.342l-5.853 2.926a1.25 1.25 0 01-1.118 0l-5.856-2.928z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End nav -->
+        <main class="px-16 py-6 bg-gray-200 md:col-span-2">
+            <div class="flex justify-center md:justify-end gap-2">
+                <a href="#"
+                    class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition__state">Log
+                    in</a>
+                <a href="#"
+                    class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition__state">Sign
+                    up</a>
+            </div>
+
+            <header>
+                <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+                <h3 class="text-2xl font-semibold">For food addicts</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+
+                <div class="mt-8 grid gap-5 lg:grid-cols-3">
+                    <!-- Cards -->
+                    <div class="card hover:shadow-xl">
+                        <img src="img/stew.jpg" alt="Stew" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean Chille Stew</span>
+                            <span class="block text-gray-500 text-sm">Stoyan's special recipe for chille beam
+                                stew.</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z">
+                                </path>
+                            </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-xl">
+                        <img src="img/noodles.jpg" alt="Noodles" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Veg Noodles</span>
+                            <span class="block text-gray-500 text-sm">Stoyan's special recipe for veggie noodles.</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z">
+                                </path>
+                            </svg>
+                            <span>13 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card hover:shadow-xl">
+                        <img src="img/curry.jpg" alt="Curry" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Curry</span>
+                            <span class="block text-gray-500 text-sm">Stoyan's special recipe for the renowned Tofu
+                                Curry.</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm.75-13a.75.75 0 00-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 000-1.5h-3.25V5z">
+                                </path>
+                            </svg>
+                            <span>38 mins</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most popular recipes</h4>
+
+                <div class="mt-8">
+                    <!-- Cards -->
+
+                </div>
+                <div class="flex justify-center">
+                    <div
+                        class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner hover:text-pink-400 transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
+                        Load
+                        more</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
